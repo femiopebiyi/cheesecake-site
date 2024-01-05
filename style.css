@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+*, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Background */
+    font-family: "Poppins";
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    margin-top: 0;
+    height: 100vh;
+        background: url(./img/homeBG.svg);
+        background-position: center;
+        background-size: cover;
+}
+.header{
+    width: 90%;
+    margin: 0em auto;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header img{
+    height: 95px;
+}
+
+.ham {
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    
+}
+.ham li{
+    text-align: center;
+    border: 1px solid transparent;
+    display: block;
+    width: 100%;
+}
+/* .ham li a:hover{
+    background-color: #523728;
+    width: 100%;
+    color: white;
+} */
+.ham li:hover{
+    background-color: #523728;
+     a{
+        color: white;
+    }
+}
+.ham a{
+    text-decoration: none;
+    color: black;
+}
+
+.ham-container {
+    /* border: 1px solid black; */
+    height: 20px;
+    width: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.ham-nav {
+    display: none;
+    transition: all .2s linear;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    
+}
+
+.ham-container span {
+    height: 2px;
+    width: 100%;
+    background: #000;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+.ham-container.close .bar:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+
+.ham-container.close .bar:nth-child(2) {
+    transform: scaleX(0);
+}
+
+.ham-container.close .bar:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+}
+
+.ul{
+    list-style: none;
+    display: flex;
+    /* padding:0 .3em; */
+    background: #6F4436CC;
+    border-radius: 10px;
+    width: 446px;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 43px;
+    align-items: center;
+}
+.ul li{
+    /* margin: 0 1em; */
+    font-size: 1rem;
+    padding: .3em 1.5em;
+    overflow: hidden;
+}
+
+.ul a{
+    text-decoration: none;
+    color: #fff;
+    overflow: hidden;
+}
+/* #home{
+
+    height: 100%;
+    padding: 0 2em;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+} */
+
+
+#home a{
+    
+    
+    
+}
+
+.signup{
+    text-decoration: none;
+    border: 2px solid #523728;
+    padding: .5em .5em;
+    border-radius: 38px;
+    color: #523728;
+}
+
+.signup:hover{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+
+
+.aside img{
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.body{
+    /* border: 1px solid red; */
+    width: 90%;
+    display: flex;
+    margin: 2em auto 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.main{
+    width: 60%;
+    /* border: 1px solid indigo; */
+    /* margin-top: 4em; */
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.aside{
+    width: 35%;
+}
+.main h1{
+    font-size: 4rem;
+    font-family: "Inika";
+    font-weight: 400;
+    color: #523728;
+}
+.main p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #1B0B0B;
+}
+
+.buttons{
+    width: 32%;
+    min-width: 260px;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+ .buttons button{
+    padding: 1.0em;
+    border-radius: 100px;
+}
+.start{
+    background: #6A4028;
+    color: #fff;
+    font-weight: 600;
+}
+.demo{
+    background: transparent;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.demo:hover{
+    background-color: #fff;
+}
+
+.clicked{
+    height: 100%;
+    padding: 0 2em;
+
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.clicked a{
+    color: #6A4028;
+}
+section{
+    background-color: #FFF8E1;
+}
+
+.about{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    /* border: 1px solid pink; */
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.about-pic{
+    width: 35%;
+    /* border: 1px solid red; */
+
+    
+}
+ .about-pic img{
+    width: 100%;
+ }
+
+ .about-info{
+    width: 60%;
+    /* border: 1px solid black; */
+ }
+
+ .about-info h1{
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 4rem;
+    color: #220404;
+ }
+
+ .about-info1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.0em;
+
+    p{
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+ }
+
+ .about button{
+    padding: 2.4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 100px;
+    margin-top: 20px;
+    background: #6A4028;
+    color: white;
+ }
+
+@media screen and (max-width: 750px) {
+    .ul, .signup {
+            display: none;
+        }
+    
+        .ham-container {
+            display: flex;
+            position: relative;
+        }
+        
+    
+        .ham-nav {
+            display: flex;
+            visibility: hidden;
+            position: absolute;
+            top: 80px;
+            right: 30px;
+            background: #fff;
+            z-index: 1;
+            align-items: flex-start;
+            height: fit-content;
+            padding: 0;
+            width: 160px;
+            border-radius: 10px;
+        }
+
+    .body{
+        /* border: 1px solid red; */
+        flex-direction: column;
+    }
+    .main{
+        /* border: 1px solid blue; */
+        width: 100%;
+        gap: 1rem;
+        align-items: center;
+
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    .aside{
+        width: 50%;
+    }
+    .home{
+        height: 100%;
+    }
+
+        .about{
+            flex-direction: column;
+        }
+
+        .about-pic{
+            width: 50%;
+        }
+        .about-info{
+            width: 100%;
+            text-align: center;
+            margin-top: 1em;
+
+            h1{
+                font-size: 3rem;
+            }
+        }
+
+}
+
+.clickedd {
+    visibility: visible;
+}
+
+@media screen and (min-width: 750px) {
+    .ham-nav{
+        display: none;
+    }
+}
