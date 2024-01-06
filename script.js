@@ -7,7 +7,7 @@ navButtons[0].classList.add("clicked")
 
 navButtons.forEach(function(button){
     button.addEventListener('click', function(e){
-        e.preventDefault()
+        // e.preventDefault()
         button.classList.add('clicked')
         navButtons.forEach(function(otherButton){
             if(otherButton !== button){
@@ -37,6 +37,6 @@ hamButton.addEventListener ("click", ()=>{
     })
     
 
-            document.getElementById('menu').addEventListener('click', function () {
+            document.getElementById('menu1').addEventListener('click', function () {
   this.classList.toggle('close');
 });
