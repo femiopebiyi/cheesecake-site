@@ -232,7 +232,7 @@ body{
 .clicked a{
     color: #6A4028;
 }
-section{
+#about{
     background-color: #FFF8E1;
 }
 
@@ -287,7 +287,92 @@ section{
     margin-top: 20px;
     background: #6A4028;
     color: white;
+    margin-bottom: 1em;
  }
+
+/* menu */
+
+.menu{
+    background: url(./img/homeBG.svg);
+    background-size: cover;
+}
+
+.contain{
+    width: 90%;
+    margin: 0em auto 0 auto;
+    /* border: 1px solid red; */
+    color: #6A4028;
+}
+
+.contain h1{
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: .67em;
+    
+}
+
+.menu-container{
+    /* border: 1px solid blue; */
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    
+}
+
+.blueberry{
+    background-color: #FFF8E1;
+    border: 1px solid green;
+    padding: 1em;
+    border-radius: 41px;
+    border: 4px solid black;
+    max-width: 280px;
+    width: 30%;
+}
+.blue-img{
+    display: flex;
+    justify-content: center;
+
+    img{
+        height: 163px;
+        width: 138px;
+    }
+}
+
+
+.words h3{
+    color: #1D2729;
+    font-weight: 700;
+    margin-top: .6em;
+    
+}
+
+.words p{
+    font-weight: 400;
+    font-size: 0.8125rem;
+}
+.priceStar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5em;
+    
+    
+}
+
+@media screen and (max-width:940px) {
+    .menu-container {
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .blueberry {
+        width: fit-content;
+        margin-bottom: .5em;
+    }
+}
 
 @media screen and (max-width: 750px) {
     .ul, .signup {
@@ -353,6 +438,18 @@ section{
             }
         }
 
+
+        .menu-container{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            /* border: 1px solid red; */
+        }
+
+        .blueberry{
+            width: 100%;
+            /* border: 1px solid blue; */
+        }
 }
 
 .clickedd {
@@ -364,3 +461,5 @@ section{
         display: none;
     }
 }
+
+
