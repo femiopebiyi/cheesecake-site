@@ -562,6 +562,27 @@ h5{
         }
 }
 
+@media screen and (max-width: 370px) {
+    .blog-one {
+            min-width: 300px;
+            width: 100%;
+        }
+
+                .blog-img-con img {
+                    height: 200px;
+                    width: 200px;
+                }
+
+                .blog-container{
+                    
+                    width: 100%;
+                }
+
+                .blog-div{
+                    width: 98%;
+                }
+}
+
 .clickedd {
     visibility: visible;
 }
