@@ -560,12 +560,21 @@ h5{
             width: 100%;
             align-items: center;
         }
+    .blog-one {
+        
+        width: 100%;
+    }
+        .blog-div {
+            
+            width: 95%;
+        }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 340px) {
     .blog-one {
             min-width: 300px;
             width: 100%;
+            margin: 0 auto .6em auto;
         }
 
                 .blog-img-con img {
